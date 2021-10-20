@@ -104,13 +104,16 @@ body {
     margin-left: auto;
     align-items: center;
 }
-.contact-item::before {
 
+.icon-mail::before {
+    background-image: url(../images/envelope.svg);
 }
 .contact-item:not(:last-child) {
     margin-right: 50px;
 }
 .nav-contact {
+    display: flex;
+    align-items: center;    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -120,6 +123,27 @@ body {
 }
 .nav-contact:hover, .nav-contact:focus {
     color: var(--accent-color);
+}
+.nav-contact::before {
+    display: flex;
+  
+    content: "";    
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.icon-mail::before {
+    width: 16px;
+    height: 12px;
+    background-image: url(../images/envelope.svg);
+}
+
+.icon-tel::before {
+    width: 10px;
+    height: 16px;
+    background-image: url(../images/smartphone.svg);
 }
 /* ---------hero--------- */
 
@@ -194,10 +218,7 @@ body {
     margin-top: 30px;
     flex-basis: calc((100% - 120px) / 4);
 }
-.icon-antena::before {
-    content: "";
-    background-image: url(../images/antenna.svg);
-}
+
 .heading-item::before {
     content: "";
     display: block;
@@ -209,7 +230,18 @@ body {
     margin-bottom: 30px;
     border-radius: 4px;
 }
-
+.icon-antena::before {   
+    background-image: url(../images/antenna.svg);
+}
+.icon-clock::before {
+    background-image: url(../images/clock.svg);
+}
+.icon-diagram::before {
+    background-image: url(../images/diagram.svg);
+}
+.icon-astronaut::before {
+    background-image: url(../images/astronaut.svg);
+}
 .second-heading-title {
     font-weight: 700;
     font-size: 14px;
@@ -309,13 +341,13 @@ body {
 .team-contact-item {
     width: 44px;
     height: 44px;
-    background-color: tomato;
     border-radius: 50%;
     cursor: pointer;
 }
 .team-contact-item:not(:last-child) {
     margin-right: 10px;
 }
+
 
 /* ---------clients--------- */
 .list-clients {
@@ -340,6 +372,7 @@ body {
 .link-client {
 
 }
+
 /* ---------footer--------- */
 .footer {
     background-color: #2F303A;
@@ -443,7 +476,9 @@ body {
     
 }
 .project-box:hover, .project-box:focus {
-    
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+                0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .project-box:not(:nth-child(3n + 3)) {
     margin-right: 30px;
