@@ -38,7 +38,7 @@ body {
 }
 .link {
     text-decoration: none;
-    
+    cursor: pointer;
 }
 .logo-dark {
     color: #000000;
@@ -104,6 +104,9 @@ body {
     margin-left: auto;
     align-items: center;
 }
+.contact-item::before {
+
+}
 .contact-item:not(:last-child) {
     margin-right: 50px;
 }
@@ -159,6 +162,17 @@ body {
 .hero-button {
     padding: 10px 32px;
 }
+.overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), 
+                    rgba(47, 48, 58, 0.4)), url(../images/imgbcg.jpg);;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 /* ---------heading--------- */
 .heading-section {
     padding-bottom: 0;
@@ -180,6 +194,22 @@ body {
     margin-top: 30px;
     flex-basis: calc((100% - 120px) / 4);
 }
+.icon-antena::before {
+    content: "";
+    background-image: url(../images/antenna.svg);
+}
+.heading-item::before {
+    content: "";
+    display: block;
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
 .second-heading-title {
     font-weight: 700;
     font-size: 14px;
@@ -249,9 +279,7 @@ body {
     border-radius: 0px 0px 4px 4px;
     
 }
-.team-item:first-child {
-    
-}
+
 .foto-box {
     margin-bottom: 30px;
 }
@@ -266,11 +294,51 @@ body {
 }
 .team-about {
     font-size: 16px;
-    padding-bottom: 30px;
+    padding-bottom: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--second-text-color);
+    
+}
+.team-contact-list {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+.team-contact-item {
+    width: 44px;
+    height: 44px;
+    background-color: tomato;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.team-contact-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+/* ---------clients--------- */
+.list-clients {
+    display: flex;
+    justify-content: space-between;
+}
+.clients-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    margin-bottom: 50px;
+}
+.client-item {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+.link-client {
+
 }
 /* ---------footer--------- */
 .footer {
@@ -278,8 +346,15 @@ body {
     padding-top: 60px;
     padding-bottom: 60px;
 }
+.footer-container {
+    display: flex;
+    
+}
 .footer-adress {
     font-style: normal;
+}
+.footer-list {
+    margin-right: 70px;
 }
 .footer-item {
     margin-bottom: 9px;
@@ -296,6 +371,32 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);;
+}
+.footer-box-contact {
+    
+}
+
+.footer-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.footer-contact-list {
+    display: flex;
+}
+.footer-contact-item {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 50%;
+}
+.footer-contact-item:not(:last-child) {
+    margin-right: 10px;
 }
 /* ---------portfolio--------- */
 /* ---------buttons--------- */
@@ -339,6 +440,9 @@ body {
     background: #FFFFFF;
     border-bottom: 1px solid #EEEEEE;
     box-sizing: border-box;
+    
+}
+.project-box:hover, .project-box:focus {
     
 }
 .project-box:not(:nth-child(3n + 3)) {
