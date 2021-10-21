@@ -219,7 +219,7 @@ body {
     flex-basis: calc((100% - 120px) / 4);
 }
 
-.heading-item::before {
+/* .heading-item::before {
     content: "";
     display: block;
     height: 120px;
@@ -241,7 +241,7 @@ body {
 }
 .icon-astronaut::before {
     background-image: url(../images/astronaut.svg);
-}
+} */
 .second-heading-title {
     font-weight: 700;
     font-size: 14px;
@@ -339,15 +339,27 @@ body {
     padding-bottom: 30px;
 }
 .team-contact-item {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    cursor: pointer;
+    
 }
 .team-contact-item:not(:last-child) {
     margin-right: 10px;
 }
+.team-contact-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    cursor: pointer;   
+}
+.icon {
+    display: block;
+    
+    width: 20px;
+    height: 20px;
 
+}
 
 /* ---------clients--------- */
 .list-clients {
