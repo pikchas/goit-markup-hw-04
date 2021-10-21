@@ -121,7 +121,8 @@ body {
     color: var(--second-text-color);
     
 }
-.nav-contact:hover, .nav-contact:focus {
+.nav-contact:hover, 
+.nav-contact:focus {
     color: var(--accent-color);
 }
 .icon-envelope {
@@ -130,6 +131,7 @@ body {
     width: 16px;
     height: 12px;
     margin-right: 10px;
+    fill: #757575;
 }
 .icon-smartphone {
     display: flex;
@@ -137,28 +139,12 @@ body {
     width: 10px;
     height: 16px;
     margin-right: 10px;
+    fill: #757575;
 }
-/* .nav-contact::before {
-    display: flex;
-  
-    content: "";    
-    margin-right: 10px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-
+.icon-envelope:hover, 
+.icon-envelope:focus {
+    fill: var(--accent-color);
 }
-.icon-mail::before {
-    width: 16px;
-    height: 12px;
-    background-image: url(../images/envelope.svg);
-}
-
-.icon-tel::before {
-    width: 10px;
-    height: 16px;
-    background-image: url(../images/smartphone.svg);
-} */
 /* ---------hero--------- */
 
 .hero-section {
@@ -232,16 +218,24 @@ body {
     margin-top: 30px;
     flex-basis: calc((100% - 120px) / 4);
 }
+.icon-bcg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+    border-radius: 4px;
+
+}
 .icon-box {
     display: block;
-    background-position: center;
-    
-}
-.icon-clock {
     width: 70px;
     height: 70px;
 }
-.heading-item::before {
+
+/* .heading-item::before {
     content: "";
     display: block;
     height: 120px;
@@ -251,7 +245,7 @@ body {
     background-color: #F5F4FA;
     margin-bottom: 30px;
     border-radius: 4px;
-} 
+}  */
 /* .icon-antena::before {   
     background-image: url(../images/antenna.svg);
 }
@@ -397,14 +391,26 @@ body {
     color: var(--primary-text-color);
     margin-bottom: 50px;
 }
-.client-item {
+.link-client {
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
-.link-client {
 
+.company-box {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    background-position: center;
+    background-size: 106px;
+    background-repeat: no-repeat;
+    width: 106px;
+    height: 60px;
 }
 
 /* ---------footer--------- */
@@ -457,6 +463,9 @@ body {
     display: flex;
 }
 .footer-contact-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 44px;
     height: 44px;
     background-color: rgba(255, 255, 255, .1);
@@ -464,6 +473,9 @@ body {
 }
 .footer-contact-item:not(:last-child) {
     margin-right: 10px;
+}
+.icon-footer {
+    fill: var(--light-text-color);
 }
 /* ---------portfolio--------- */
 /* ---------buttons--------- */
