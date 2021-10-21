@@ -124,7 +124,21 @@ body {
 .nav-contact:hover, .nav-contact:focus {
     color: var(--accent-color);
 }
-.nav-contact::before {
+.icon-envelope {
+    display: flex;
+    align-items: center;
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+}
+.icon-smartphone {
+    display: flex;
+    align-items: center;
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+}
+/* .nav-contact::before {
     display: flex;
   
     content: "";    
@@ -144,7 +158,7 @@ body {
     width: 10px;
     height: 16px;
     background-image: url(../images/smartphone.svg);
-}
+} */
 /* ---------hero--------- */
 
 .hero-section {
@@ -218,8 +232,16 @@ body {
     margin-top: 30px;
     flex-basis: calc((100% - 120px) / 4);
 }
-
-/* .heading-item::before {
+.icon-box {
+    display: block;
+    background-position: center;
+    
+}
+.icon-clock {
+    width: 70px;
+    height: 70px;
+}
+.heading-item::before {
     content: "";
     display: block;
     height: 120px;
@@ -229,8 +251,8 @@ body {
     background-color: #F5F4FA;
     margin-bottom: 30px;
     border-radius: 4px;
-}
-.icon-antena::before {   
+} 
+/* .icon-antena::before {   
     background-image: url(../images/antenna.svg);
 }
 .icon-clock::before {
