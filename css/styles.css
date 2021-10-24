@@ -41,6 +41,7 @@ body {
 .link {
     text-decoration: none;
     cursor: pointer;
+    display: block;
 }
 .logo-dark {
     color: #000000;
